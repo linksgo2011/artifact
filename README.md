@@ -1,0 +1,15 @@
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <configuration>
+        <webResources>
+          <resource>
+               <directory>lib</directory>
+               <targetPath>WEB-INF/lib/</targetPath>
+               <includes>
+                    <include>**/*.jar</include>
+                </includes>
+          </resource>
+        </webResources>
+    </configuration>
+</plugin>
